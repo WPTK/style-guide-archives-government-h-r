@@ -1,0 +1,8 @@
+# Archived guides are binary files. Never convert their line endings: they are
+# stored as the exact downloaded bytes.
+*.pdf binary
+*.epub binary
+
+# Files of 100 MB or more are stored with Git LFS (GitHub refuses plain files that large).
+# Later lines override the rules above.
+government-institutional/presidencia-de-colombia/2023-manual-de-identidad-visual-2023-2026-colombia-potencia-de-la.pdf filter=lfs diff=lfs merge=lfs -text
